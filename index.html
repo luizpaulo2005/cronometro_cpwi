@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cronômetro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      html {
+        font-family: monospace, sans-serif !important
+      }
+    </style>
+
+  </head>
+  <body class="w-screen h-screen bg-gray-950 text-zinc-300 flex flex-col gap-3 items-center justify-center">
+    <span id="relogio" class="text-3xl">00:00:00</span>
+    <div class="flex gap-2">
+      <button id="startButton" class="rounded px-3 py-2 bg-emerald-500 transition-colors hover:bg-emerald-700">Iniciar</button>
+      <button id="pauseButton" class="rounded px-3 py-2 bg-yellow-500 transition-colors hover:bg-yellow-700">Pausar</button>
+      <button id="resetButton" class="rounded px-3 py-2 bg-red-500 transition-colors hover:bg-red-700">Resetar</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
